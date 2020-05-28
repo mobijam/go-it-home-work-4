@@ -29,6 +29,17 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -139,55 +150,30 @@ nav {
     color: var(--main-accent);
 }
 
-.icon {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.icon:hover > .envelope {
-    fill: var(--main-accent);
-}
-
-.icon:focus > .envelope {
-    fill: var(--main-accent);
-}
-
-.icon:hover > .phone {
-    fill: var(--main-accent);
-}
-
-.icon:focus > .phone {
-    fill: var(--main-accent);
-}
-
-.envelope {
-    fill: #757575;
-}
-
-.phone {
-    fill: #757575;
-}
 
 /* Баннер с фоновым рисунком */
 .banner {
-    background-image: url(../images/hero-banner.png);
-    background-color: rgba(47, 48, 58, 0.8);
-    background-blend-mode: multiply;
-    width: 1600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner-image.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    max-width: 1600px;
     height: 600px;
+   
     margin-left: auto;
     margin-right: auto;
+    
     align-items: center;
     text-align: center;
 }
 
 .banner-text {
     margin-top: 0px;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
     padding-top: 200px;
-    padding-left: 477px;
-    padding-right: 477px;
+    padding-left: 452px;
+    padding-right: 452px;
 
     color: var(--page-hero-text);    
 
@@ -218,8 +204,6 @@ nav {
 
 /* Основной контент */
 .our-benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
     border-bottom: 1px solid #ECECEC;
 
     color: var(--primary-page-text);
@@ -228,6 +212,7 @@ nav {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 
 /* Скрытый заголовок */
 .hidden-title {
@@ -244,14 +229,6 @@ nav {
     list-style-type: none;
 }
 
-.bnf-icon {
-    display: inline-block;
-    margin-top: 0px;
-    margin-bottom: 30px;
-
-    border-radius: 4px;
-    background-color: var(--team-section-bg);
-}
 
 .title {
     color: var(--secondary-page-text);
@@ -278,10 +255,6 @@ nav {
 }
 
 /* Чем мы занимаемся */
-.our-projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 /* Заголовок секции */
 .projects-title {
@@ -335,9 +308,6 @@ nav {
 
 /* Сотрудники */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
     background-color: var(--team-section-bg);
 }
 
@@ -425,10 +395,6 @@ nav {
 
 
 /* Секция клиентов */
-.our-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 /* Заголовок секции */
 .clients-title {
@@ -594,7 +560,7 @@ nav {
 /* Страница портфолио */
 
 .section {
-    padding-top: 93px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
