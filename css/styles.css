@@ -237,6 +237,8 @@ nav {
 
 /* Основной контент */
 .our-benefits {
+    padding-top: 94px;
+
     color: var(--primary-page-text);
 
     font-size: 14px;
