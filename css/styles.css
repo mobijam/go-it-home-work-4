@@ -12,378 +12,353 @@
     --copyright: rgba(255, 255, 255, 0.4);
     --link-icons: #afb1b8;
     --bnf-icons-bg: #f5f4fa;
+    --bnf-icons-1: #212121;
+    --bnf-icons-2: #2196f3;
     --primary-bg: #ffffff;
     --fig-caption-bg: rgba(47, 48, 58, 0.8);
     --team-section-bg: #f5f4fa;
     --footer-bg: #2f303a;
+    --footer-links-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* Шрифты  и главный фон страницы*/
 body {
-    background-color: var(--primary-bg);
+  background-color: var(--primary-bg);
 
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Шапка сайта */
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
-    background-color: var(--primary-bg);
-    border: 1px solid #ececec;
+  background-color: var(--primary-bg);
+  border: 1px solid #ececec;
     
 }
 
 .header-menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Логотип веб-студии */
 .studio-logo {
-    display: inline-block;
-    margin-right: 85px;
-    color: var(--main-accent);
+  display: inline-block;
+  margin-right: 85px;
+  color: var(--main-accent);
 
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 /* Часть логотипа */
 .logo {
-    color: var(--logo-part-text);
+  color: var(--logo-part-text);
 }
 
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Меню навигации */
 .nav-bar {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .nav-bar .link {
-    color: var(--secondary-page-text);
+  color: var(--secondary-page-text);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .nav-bar > li {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .nav-bar > li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .link:hover,
 .link:focus {
-    color: var(--main-accent);
+  color: var(--main-accent);
 }
 
 /* Контакты веб-студии */
 .contacts {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding: 0px;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .contacts > li {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .contacts > li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .studio-contacts {
-    color: var(--primary-page-text);
+  color: var(--primary-page-text);
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .studio-contacts:hover,
 .studio-contacts:focus {
-    color: var(--main-accent);
+  color: var(--main-accent);
 }
 
 .icon-envelope {
-    display: inline-flex;
-    justify-content: center;
+  display: inline-flex;
+  justify-content: center;
         
-    width: 16px;
-    height: 11px;
-    margin-right: 10px;
-    fill: var(--primary-page-text);
-}
-
-.icon-envelope:hover,
-.icon-envelope:focus {
-    fill: var(--main-accent);
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
 }
 
 .icon-smartphone {
-    display: inline-flex;
-    justify-content: center;
+  display: inline-flex;
+  justify-content: center;
       
-    width: 10px;
-    height: 14px;
-    margin-right: 10px;
-    fill: var(--primary-page-text);
+  width: 10px;
+  height: 14px;
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
 }
-
-.icon-smartphone:hover,
-.icon-smartphone:focus {
-    fill: var(--main-accent);
-}
-
 
 /* Баннер с фоновым рисунком */
 .banner {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    max-width: 1600px;
-    height: 600px;
+  max-width: 1600px;
+  height: 600px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 .banner-text {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    padding-top: 200px;
-    padding-left: 452px;
-    padding-right: 452px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
 
-    color: var(--page-hero-text);
+  color: var(--page-hero-text);
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Кнопка заказа */
 .button {
-    display: inline-block;
-    padding: 10px 32px;
-    min-width: 200px;
-    border: 1px solid transparent;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
 
-    color: var(--page-hero-text);
-    background-color: var(--main-accent);
+  color: var(--page-hero-text);
+  background-color: var(--main-accent);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 /* Основной контент */
 .our-benefits {
-    padding-top: 94px;
+  padding-top: 94px;
 
-    color: var(--primary-page-text);
+  color: var(--primary-page-text);
 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Наши преимущества */
 .benefits-list {
-    display: flex;
-    justify-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
+  display: flex;
+  justify-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .icon-antenna {
-    display: inline-block;
+  display: inline-block;
     
-    width: 270px;
-    height: 120px;
+  width: 270px;
+  height: 120px;
 
-    margin-bottom: 30px;
-    border-radius: 4px;
-
-    background-image: url(../images/principles/antenna.svg);
-    background-color:  var(--bnf-icons-bg);
-    background-blend-mode: multiply;
-    background-position: right -100px bottom -30px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
     
+  background-color:  var(--bnf-icons-bg);
 }
 
 .icon-clock {
-    display: inline-block;
+  display: inline-block;
     
-    width: 270px;
-    height: 120px;
+  width: 270px;
+  height: 120px;
 
-    margin-bottom: 30px;
-    border-radius: 4px;
-
-    background-image: url(../images/principles/clock.svg);
-    background-color:  var(--bnf-icons-bg);
-    background-blend-mode: multiply;
-    background-position: right -100px bottom -30px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+    
+  background-color:  var(--bnf-icons-bg);
 }
 
 .icon-diagram {
-    display: inline-block;
+  display: inline-block;
     
-    width: 270px;
-    height: 120px;
+  width: 270px;
+  height: 120px;
 
-    margin-bottom: 30px;
-    border-radius: 4px;
-
-    background-image: url(../images/principles/diagram.svg);
-    background-color:  var(--bnf-icons-bg);
-    background-blend-mode: multiply;
-    background-position: right -100px bottom -30px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+    
+  background-color:  var(--bnf-icons-bg);
 }
 
 .icon-astronaut {
-    display: inline-block;
-    justify-content: center;
+  display: inline-block;
     
-    width: 270px;
-    height: 120px;
+  width: 270px;
+  height: 120px;
 
-    margin-bottom: 30px;
-    border-radius: 4px;
-
-    background-image: url(../images/principles/astronaut.svg);
-    background-color:  var(--bnf-icons-bg);
-    background-blend-mode: multiply;
-    background-position: right -100px bottom -30px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+    
+  background-color:  var(--bnf-icons-bg);
 }
 
 .title {
-    color: var(--secondary-page-text);
-    margin-top: 0px;
-    margin-bottom: 10px;
+  color: var(--secondary-page-text);
+  margin-top: 0px;
+  margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .benefits-list p {
-    margin: 0px;
+  margin: 0px;
 }
 
 .benefits-list > li {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .benefits-list > li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .box {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 
-    width: 1200px;
+  width: 1200px;
 
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
 }
 
 /* Чем мы занимаемся */
-
 /* Заголовок секции */
 .projects-title {
-    color: var(--secondary-page-text);
+  color: var(--secondary-page-text);
 
-    margin-top: 0px;
-    margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .categories {
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .categories > li {
@@ -394,14 +369,25 @@ nav {
   margin-right: 0px;
 }
 
+.target {
+  position: static;
+}
+
 /* Подписи к проектам */
 .project {
   display: inline-block;
+
+  position: absolute;
+  top: 1533px;
+
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 27px;
   padding-bottom: 27px;
+
   min-width: 370px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 
   color: var(--page-hero-text);
   background-color: var(--fig-caption-bg);
@@ -449,8 +435,7 @@ nav {
   text-align: center;
 
   background-color: var(--primary-bg);
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .employee-card:last-child {
@@ -489,7 +474,7 @@ nav {
 .social-links-list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   margin-top: 0px;
   margin-bottom: 0px;
@@ -498,12 +483,52 @@ nav {
   list-style-type: none;
 }
 
-.social-links-list > li {
-  margin-bottom: 36px;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  margin-bottom: 24px;
+  margin-right: 10px;  
+        
+  border-radius: 50%;
+}
+
+.icon:last-child {
+  margin-right: 0px;
+}
+
+.icon-footer {
+  background-color: var(--footer-links-bg);
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: var(--main-accent);
+}
+
+.icon-type {
+  display: flex;
+    
+  width: 20px;
+  height: 20px;
+
+  fill: var(--link-icons);
+}
+
+.icon-type-footer {
+  fill: var(--page-hero-text);
+}
+
+.icon-type:hover,
+.icon-type:focus {
+  fill: var(--page-hero-text);
 }
 
 /* Секция клиентов */
-
 /* Заголовок секции */
 .clients-title {
   margin-top: 0px;
@@ -536,22 +561,24 @@ nav {
   margin-right: 0px;
 }
 
-.clients-list a {
-  display: inline-block;
-}
-
 .client-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   width: 170px;
   height: 90px;
 
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
+  fill: var(--link-icons);
+
+  border: 1px solid var(--link-icons);
   border-radius: 4px;
 }
 
 .client-icon:hover,
 .client-icon:focus {
   fill: var(--main-accent);
+  border: 1px solid var(--main-accent);
 }
 
 /* Подвал сайта */
@@ -683,8 +710,7 @@ nav {
 
 .nav-portfolio {
   min-height: 38px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
 
   border: none;
   border-radius: 4px;
@@ -726,6 +752,11 @@ nav {
 
 .work-item > a {
   text-decoration: none;
+}
+
+.work-item:hover,
+.work-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .work-item {
