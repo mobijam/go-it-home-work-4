@@ -180,7 +180,8 @@ nav {
 
 /* Баннер с фоновым рисунком */
 .banner {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/banner-image.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/banner-image.jpg);
+  background-color: rgba(47, 48, 58, 0.8);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -251,52 +252,14 @@ nav {
   list-style-type: none;
 }
 
-.icon-antenna {
-  display: inline-block;
-    
+.bnf-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
 
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-    
-  background-color:  var(--bnf-icons-bg);
-}
-
-.icon-clock {
-  display: inline-block;
-    
-  width: 270px;
-  height: 120px;
-
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-    
-  background-color:  var(--bnf-icons-bg);
-}
-
-.icon-diagram {
-  display: inline-block;
-    
-  width: 270px;
-  height: 120px;
-
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-    
-  background-color:  var(--bnf-icons-bg);
-}
-
-.icon-astronaut {
-  display: inline-block;
-    
-  width: 270px;
-  height: 120px;
-
-  padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
     
@@ -477,13 +440,21 @@ nav {
   justify-content: center;
 
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   padding: 0px;
 
   list-style-type: none;
 }
 
 .icon {
+  margin-right: 10px;  
+}
+
+.icon:last-child {
+  margin-right: 0px;
+}
+
+.icon > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,40 +462,19 @@ nav {
   width: 44px;
   height: 44px;
 
-  margin-bottom: 24px;
-  margin-right: 10px;  
-        
   border-radius: 50%;
-}
-
-.icon:last-child {
-  margin-right: 0px;
-}
-
-.icon-footer {
-  background-color: var(--footer-links-bg);
-}
-
-.icon:hover,
-.icon:focus {
-  background-color: var(--main-accent);
-}
-
-.icon-type {
-  display: flex;
-    
-  width: 20px;
-  height: 20px;
 
   fill: var(--link-icons);
 }
 
-.icon-type-footer {
+.icon-footer > a {
+  background-color: var(--footer-links-bg);
   fill: var(--page-hero-text);
 }
 
-.icon-type:hover,
-.icon-type:focus {
+.icon a:hover,
+.icon a:focus {
+  background-color: var(--main-accent);
   fill: var(--page-hero-text);
 }
 
