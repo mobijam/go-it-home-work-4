@@ -180,6 +180,11 @@ nav {
 
 /* Баннер с фоновым рисунком */
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/banner-image.jpg);
   background-color: rgba(47, 48, 58, 0.8);
   background-size: cover;
@@ -192,24 +197,30 @@ nav {
   margin-left: auto;
   margin-right: auto;
 
-  align-items: center;
   text-align: center;
 }
 
-.banner-text {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+.banner-text-box {
+  display: inline-block;
+  
+  width: 696px;
+  height: 120px;
 
-  color: var(--page-hero-text);
+  margin-bottom: 30px;
+}
+
+.banner-text {
+  margin: 0px;
+  margin: 0px;
+  padding: 0px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--page-hero-text);
 }
 
 /* Кнопка заказа */
